@@ -14,7 +14,7 @@ public class AppProyecto_v2 {
 
     public static void main(String[] args) {
         SpringApplication.run(AppProyecto_v2.class, args);
-        LOGGER.info("App corriendo en el PUERTO :  http://localhost:9090");
+        LOGGER.info("App corriendo en el PUERTO : ${MYSQL_HOST}:${MYSQL_PORT}");
     }
 
     @Bean
