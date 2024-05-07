@@ -39,7 +39,7 @@ public class UsuarioController {
 
     @GetMapping("/listar")
     public ResponseEntity<List<UsuarioDtoSalida>> listarUsuarios() {
-        LOGGER.error("Error al listar los usuarios");
+
         return new ResponseEntity<>(interfaceUsuarioService.obtenerTodosLosUsuarios(), HttpStatus.OK);
 
     }
